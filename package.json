@@ -1,0 +1,25 @@
+{
+  "name": "accra-life",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Accra Life: a single-player 3D open-world simulation of Accra that runs in the browser",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "npm run dev -w @accra/game",
+    "build": "npm run build -w @accra/game",
+    "preview": "npm run preview -w @accra/game",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

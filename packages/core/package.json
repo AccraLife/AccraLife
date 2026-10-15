@@ -1,0 +1,15 @@
+{
+  "name": "@accra/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "three": "^0.170.0"
+  }
+}
